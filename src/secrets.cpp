@@ -56,18 +56,18 @@
 #define MQTT_PORT 8883                            ///< Puerto seguro (TLS)
 #endif
 #ifndef MQTT_USER
-#define MQTT_USER "alvaro"                        ///< Usuario MQTT (definir vía .env)
+#define MQTT_USER "Alejandro"                        ///< Usuario MQTT (definir vía .env)
 #endif
 #ifndef MQTT_PASSWORD
-#define MQTT_PASSWORD "supersecreto"              ///< Contraseña MQTT (definir vía .env)
+#define MQTT_PASSWORD "1234"              ///< Contraseña MQTT (definir vía .env)
 #endif
 
 // Variables de configuración de la red WiFi
 #ifndef WIFI_SSID
-#define WIFI_SSID "MI_RED_WIFI"                ///< SSID por defecto; usar aprovisionamiento
+#define WIFI_SSID "Familia Vallecilla"                ///< SSID por defecto; usar aprovisionamiento
 #endif
 #ifndef WIFI_PASSWORD
-#define WIFI_PASSWORD "a1b2c3d4"                  ///< Password por defecto; usar aprovisionamiento
+#define WIFI_PASSWORD "samivate2509"                  ///< Password por defecto; usar aprovisionamiento
 #endif
 
 // Alias para compatibilidad con el código existente
@@ -118,7 +118,7 @@ const char* root_ca = ROOT_CA;
 // Los defines se aplican desde add_env_defines.py
 // Si MQTT_SERVER está definido pero vacío, se usará el valor por defecto del #ifndef
 const char* mqtt_server = MQTT_SERVER;            ///< Dirección de tu servidor MQTT
-const int mqtt_port = MQTT_PORT;                  ///< Puerto seguro (TLS)
+const int mqtt_port = 8883;                  ///< Puerto seguro (TLS)
 const char* mqtt_user = MQTT_USER;                ///< Usuario MQTT
 const char* mqtt_password = MQTT_PASSWORD;        ///< Contraseña MQTT
 
